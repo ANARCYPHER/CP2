@@ -16,6 +16,7 @@ https://beginnersbook.com/2014/01/c-strings-string-functions/
 https://beginnersbook.com/2014/01/c-strings-string-functions/
 https://beginnersbook.com/2014/01/c-functions-examples/
 https://beginnersbook.com/2014/01/c-pointer-to-array-example/
+https://beginnersbook.com/2014/01/c-file-io/
 
 
 
