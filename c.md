@@ -1,6 +1,6 @@
 
 https://beginnersbook.com/2015/02/simple-c-programs/
-1, 
+1, 2
 
 
 
