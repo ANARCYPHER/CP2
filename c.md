@@ -7,7 +7,7 @@ https://beginnersbook.com/2015/02/simple-c-programs/
 String Programs
 1, 4, 5, 6
 Array Programs
-1, 2, 3
+1, 2, 3, 4
 
 
 
