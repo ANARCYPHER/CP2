@@ -11,5 +11,6 @@ Array Programs
 Sorting programs
 1, 2, 3, 4
 
-
+C Pointer programs
+1, 
 
