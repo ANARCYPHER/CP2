@@ -1,6 +1,6 @@
 https://beginnersbook.com/2015/02/simple-c-programs/
 
-
+https://www.codewithc.com/mini-project-in-c-bank-management-system/
 
 
 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
@@ -15,6 +15,5 @@ C Pointer programs
 1, 2, 3, 4, 5,
 
 Programs on calculation
-1, 
+1, 2,
 
-https://www.codewithc.com/mini-project-in-c-bank-management-system/
