@@ -15,5 +15,5 @@ C Pointer programs
 1, 2, 3, 4, 5,
 
 Programs on calculation
-1, 2, 3, 4,
+1, 2, 3, 4, 5
 
