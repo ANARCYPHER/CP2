@@ -18,5 +18,9 @@ Programs on calculation
 1, 2, 3, 4, 5
 
 Number system conversion programs
-1, 2, 3, 4,
+1, 2, 3, 4, 5,
 
+Number system conversion programs
+
+https://www.programiz.com/c-programming/examples
+71,
