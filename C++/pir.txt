@@ -1,0 +1,1233 @@
+Pattern Programs in CWritten By - C VERSATTI
+Here is a list of most asked Pattern programs in C++.
+
+Pattern
+  
+    *
+   ***
+  *****
+ *******
+*********
+View Code
+
+	
+#include 
+using namespace std;
+
+	int main()
+	{
+		int n;
+		cout << "Enter number of rows to be printed\n"; cin >> n;
+		for (int i = 1; i <= n; ++i)	//for each row
+		{
+			for (int j = 0; j < n - i; ++j)	//for printing spaces
+				cout << " ";
+			for (int j = 0; j < 2 *i - 1; ++j)	//for printing star
+				cout << "*";
+			cout << "\n";	//going to new line after completing one row
+		}
+		return 0;
+	}
+Pattern
+  
+      *
+     * *
+    * * *
+   * * * *
+
+View Code
+
+	
+	
+#include 
+using namespace std;
+
+	int main()
+	{
+	  int n;
+	  cout << "Enter number of rows to be printed\n"; cin >> n;
+	  for (int i = 1; i <= n; ++i)	//for each row
+	  {
+	    for (int j = 0; j < n - i; ++j)	//for printing spaces
+	      cout << " ";
+	    for (int j = 1; j <= i; ++j)	//for printing star and space
+	      cout << "*";
+	    cout << "\n";	//going to new line after completing one row
+
+	  }
+	  return 0;
+	}
+Pattern
+  
+   1
+  121
+ 12321
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+  int n;
+  cout << "Enter number of rows to be printed\n"; cin >> n;
+  for (int i = 1; i <= n; ++i)	//for each row
+  {
+    for (int j = 0; j < n - i; ++j)	//for printing spaces
+      cout << " ";
+    for (int j = 1; j <= i; ++j)	//for increasing series
+      cout << j; for (int j = i - 1; j > 0; --j)
+      cout << j;
+    cout << "\n";	//going to new line after completing one row
+
+  }
+  return 0;
+}
+
+Pattern
+  
+    * 1 *
+  * 1 2 1 *
+* 1 2 3 2 1 *
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//for each row
+	{
+		cout << "*";	//beginning star
+		for (int j = 1; j <= i; ++j)	//for increasing series
+			cout << j << " "; for (int j = i - 1; j > 0; --j)	//for decreasing series
+			cout << j << " ";
+		cout << "*";	//ending star
+		cout << "\n";	//going to new line after completing one row
+
+	}
+	return 0;
+}
+
+
+Pattern
+  
+1
+2 3
+4 5 6
+7 8 9 10
+
+View Code
+
+	
+#include 
+#include   	//for setw function
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	int num = 1;	//maintains the number to be printed
+	for (int i = 1; i <= n; ++i)	//for row
+	{
+		for (int j = 0; j < i; ++j)	//printing num and incrementing it ‘i’ times 
+			cout << setw(3) << num++ << " ";	//setw is used to prevent disruption due to different number
+		//of digits
+		cout << "\n";	//going to next line to print next row
+	}
+
+	return 0;
+}
+
+Pattern
+  
+   A
+  ABC
+ ABCDE
+ABCDEFG
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//for each row
+	{
+		for (int j = 0; j < n - i; ++j)	//for printing spaces
+			cout << " ";
+		for (int j = 1; j <= 2 *i - 1; ++j)	//for printing alphabets
+			cout << (char)('A' + j - 1);
+		cout << "\n";	//going to new line after completing one row
+
+	}
+	return 0;
+}
+
+Pattern
+  
+   A
+  ABA
+ ABCBA
+ABCDCBA
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//for each row
+	{
+		for (int j = 0; j < n - i; ++j)	//for printing spaces
+			cout << " ";
+		for (int j = 0; j < i; ++j)	//for increasing Alphabets
+			cout << (char)('A' + j); for (int j = i - 1; j > 0; --j)	//for decreasing Alphabets
+			cout << (char)('A' + j - 1);;
+		cout << "\n";	//going to new line after completing one row
+
+	}
+	return 0;
+}
+
+Pattern
+  
+     A1
+    AB12
+   ABC123
+  ABCD1234
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//for each row
+	{
+		for (int j = 0; j < n - i; ++j)	//for printing spaces
+			cout << " ";
+		for (int j = 1; j <= i; ++j)	//for printing alphabets
+			cout << (char)('A' + j - 1);
+		for (int j = 1; j <= i; ++j)	//for printing numbers
+			cout << j;
+		cout << "\n";	//going to new line after completing one row
+
+	}
+	return 0;
+}
+30+ C Programming Interview Questions
+
+Pattern
+  
+*****1*****
+****2*2****
+***3*3*3***
+**4*4*4*4**
+*5*5*5*5*5*
+6*6*6*6*6*6
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//for row
+	{
+		int num = i;
+		for (int j = 0; j < n - i; ++j)	//printing preceding stars
+			cout << "*";
+		while (--num)	//printing the numbers with stars
+			cout << i << "*";
+		cout << i;	//printing the number last time without star
+		for (int j = 0; j < n - i; ++j)	//printing following stars
+			cout << "*";
+		cout << "\n";	//going to next line to print next row
+	}
+
+	return 0;
+}
+
+Pattern
+  
+    *
+   * *
+  *   *
+ * * * *
+
+View Code
+
+	
+#include 
+using namespace std;
+
+	int main()
+	{
+		int n;
+		cout << "Enter number of rows to be printed\n"; cin >> n;
+		for (int i = 0; i < n - 1; ++i)	//for row till second-last
+		{
+			int j;
+			for (j = 1; j <= n + i; ++j)	//moving cursor from first to last place of line
+			{
+				if (j == n - i || j == n + i)	//printing star as required
+					cout << "*";
+				else	//printing space
+					cout << " ";
+			}
+			cout << "\n";	//going to new line after completing one row
+		}
+		for (int j = 0; j < n; ++j)	//printing last row
+			cout << "*";
+		return 0;
+	}
+
+Pattern
+  
+* * * * * * *
+*           *
+*           *
+* * * * * * *
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int l, b;
+	cout << "Enter length and breadth seperated by space\n"; cin >> l >> b;
+	for (int i = 0; i < b; ++i)	//for row
+	{
+		if (i == 0 || i == b - 1)	//printing first and last row
+		{
+			for (int j = 0; j < l; ++j)
+				cout << "*";
+		}
+		else
+		{
+			for (int j = 0; j < 2 * l; ++j)	//printing other rows
+			{
+				if (j == 0 || j == 2 *l - 2)	//printing first and last star
+					cout << "*";
+				else	//printing spaces
+					cout << " ";
+			}
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+* * * * *
+    * * * *
+        * * *
+            * *
+                *
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 0; i < n; ++i)	//for row
+	{
+		for (int j = 0; j < 4 * i; ++j)
+			cout << " ";	//printing beginning spaces
+		for (int j = 0; j < n - i; ++j)
+			cout << "*";	//printing stars
+		cout << "\n";	//going to next line to print next row
+	}
+	return 0;
+}
+
+Pattern
+  
+* * * * *
+* * * *
+* * *
+* *
+*
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 0; i < n; ++i)	//for row
+	{
+		for (int j = 0; j < n - i; ++j)
+			cout << "*";	//printing stars
+		cout << "\n";	//going to next line to print next row
+	}
+	return 0;
+}
+
+Pattern
+  
+        *
+      * *
+    * * *
+  * * * *
+* * * * *
+  * * * *
+    * * *
+      * *
+        * 
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter height of triangle\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//printing upper half of triangle
+	{
+		for (int j = 0; j < (2 *(n - i)); ++j)
+			cout << " ";	//printing spaces
+		for (int j = 0; j < i; ++j)
+			cout << "*";	//printing spaces
+		cout << "\n"; //going to next line to print next row } for (int i = n - 1; i > 0; --i)	//printing lower half
+	{
+		for (int j = 0; j < (2 *(n - i)); ++j)
+			cout << " ";	//printing spaces
+		for (int j = 0; j < i; ++j)
+			cout << "*";	//printing spaces
+		cout << "\n";	//going to next line to print next row
+	}
+	return 0;
+}
+
+Pattern
+  
+* * * * *  * * * * *
+* * * *      * * * *
+* * *          * * *
+* *              * *
+*                  *
+*                  *
+* *              * *
+* * *          * * *
+* * * *      * * * *
+* * * * *  * * * * *
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter height of one half\n"; cin >> n;
+	for (int i = n; i > 0; --i)	//print upper half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j <= i)	//print stars in left half
+				cout << "*";
+			else	//print space after star in right half
+				cout << " ";
+			if (i <= ((2 *n) - j))	//print space after star in left half
+				cout << " ";
+			else	//print stars in right half
+				cout << "*";
+		}
+		cout << "\n";
+	}
+	for (int i = 1; i <= n; ++i)	//print lower half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j <= i)	//print stars in left half
+				cout << "*";
+			else	//print space after star in right half
+				cout << " ";
+			if (i <= ((2 *n) - j))	//print space after star in left half
+				cout << " ";
+			else	//print stars in right half
+				cout << "*";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+30+ C Programming Interview Questions
+
+Pattern
+  
+*                  *
+* *              * *
+* * *          * * *
+* * * *      * * * *
+* * * * *  * * * * *
+* * * * *  * * * * *
+* * * *      * * * *
+* * *          * * *
+* *              * *
+*                  *
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter half of height of butterfly\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//print upper half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j <= i)	//print stars in left half
+				cout << "*";
+			else	//print space after star in right half
+				cout << " ";
+			if (i <= ((2 *n) - j))	//print space after star in left half
+				cout << " ";
+			else	//print stars in right half
+				cout << "*";
+		}
+		cout << "\n"; } for (int i = n; i > 0; --i)	//print lower half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j <= i)	//print stars in left half
+				cout << "*";
+			else	//print space after star in right half
+				cout << " ";
+			if (i <= ((2 *n) - j))	//print space after star in left half
+				cout << " ";
+			else	//print stars in right half
+				cout << "*";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+    * * * * *
+     * * * *
+      * * *
+       * *
+        *
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter width of diamond\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//print upper half 
+	{
+		for (int j = 0; j < n - i; ++j)	//print spaces
+			cout << " ";
+		for (int j = 0; j < i; ++j)	//print stars
+			cout << "*";
+		cout << "\n"; } for (int i = n - 1; i > 0; --i)	//print lower half
+	{
+		for (int j = 0; j < n - i; ++j)	//print spaces
+			cout << " ";
+		for (int j = 0; j < i; ++j)	//print stars
+			cout << "*";
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+         *
+       *   * 
+     *       *  
+   *           *  
+  *             *
+   *           *
+     *        *  
+        *   * 
+          *
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter width of diamond\n"; cin >> n;
+	for (int i = 0; i < n; ++i)	//print upper half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j == n - i || j == n + i)	//print corresponding stars
+				cout << "*";
+			else	//printing rest spaces
+				cout << " ";
+		}
+		cout << "\n"; } for (int i = n - 2; i >= 0; --i)	//print lower half
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j == n - i || j == n + i)	//print corresponding stars
+				cout << "*";
+			else	//printing rest spaces
+				cout << " ";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+3
+44
+555
+6666
+555
+44
+3
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n, num;
+	cout << "Enter number to start with\n"; cin >> num;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//print upper half
+	{
+		for (int j = 1; j <= i; ++j)	//print number 
+		{ 
+			cout << num;
+		}
+		++num;	//increasing for next row
+		cout << "\n"; } --num; //bringing back the last printed value for (int i = n - 1; i > 0; --i)	//print lower half
+	{
+		--num;	//decreasing the number to print
+		for (int j = 1; j <= i; ++j)
+		{
+			cout << num;	//printing the number
+		}
+		cout << "\n";
+	}
+	return 0;
+
+}
+
+Pattern
+  
+1
+2*3
+4*5*6
+7*8*9*10
+7*8*9*10
+4*5*6
+2*3
+1
+
+View Code
+
+	
+#include 
+using namespace std;
+int main()
+{
+	int n;
+	cout << "Enter number of rows of one half\n"; cin >> n;
+	int num = 1;
+	for (int i = 1; i <= n; ++i)	//print upper half
+	{
+		for (int j = 1; j <= 2 *i - 1; ++j)
+		{
+			if (j % 2 != 0)	//print number at odd places
+				cout << num++;	//increasing for next place
+			else	//print star at odd places
+				cout << "*";
+		}
+		cout << "\n"; } --num; //bringing back the last printed value num = num - (n - 1); //setting num to be printed at the beginning number for (int i = n; i > 0; --i)	//print lower half
+	{
+		for (int j = 1; j <= 2 *i - 1; ++j)
+		{
+			if (j % 2 != 0)	//print number at odd places
+				cout << num++;	//increasing for next place
+			else	//print star at odd places
+				cout << "*";
+		}
+		cout << "\n";
+		num = num - (i - 1);
+	}
+	return 0;
+
+}
+
+Pattern
+  
+*
+ **
+  ***
+   ****
+    *****
+   ****
+  ***
+ **
+*
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter half of number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//upper half
+	{
+		for (int j = 1; j < i; ++j)	//prints spaces
+			cout << " ";
+		for (int j = 1; j <= i; ++j)	//prints stars
+			cout << "*";
+		cout << "\n"; //going to new line after completing one row } for (int i = n - 1; i > 0; --i)	//lower half
+	{
+		for (int j = 1; j < i; ++j)	//prints spaces
+			cout << " ";
+		for (int j = 1; j <= i; ++j)	//prints stars
+			cout << "*";
+		cout << "\n";	//going to new line after completing one row
+	}
+	return 0;
+}
+
+Pattern
+  
+    *
+      *
+        *
+   *******
+        *
+      *
+    *
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	n = n / 2;
+	for (int i = 1; i <= n; ++i)	//upper half
+	{
+		for (int j = 0; j < n - 1 + i; ++j)	//prints spaces
+			cout << " ";
+		cout << "*";	//prints star
+		cout << "\n";	//going to new line after completing one row
+	}
+	for (int j = 0; j < 2 *n + 1; ++j)	//middle line
+		cout << "*";
+	cout << "\n"; for (int i = n; i > 0; --i)	//lower half
+	{
+		for (int j = 0; j < n - 1 + i; ++j)	//prints spaces
+			cout << " ";
+		cout << "*";	//prints star
+		cout << "\n";	//going to new line after completing one row
+	}
+	return 0;
+}
+
+Pattern
+  
+0
+1 0
+0 1 0
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows to be printed\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//row number
+	{
+		for (int j = 1; j <= i; ++j)	//position in each row
+		{
+			if ((i + j) % 2 == 0)	//divisibility of sum decides one or two
+				cout << "0 ";
+			else
+				cout << "1 ";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+  *****
+ *****
+*****
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter length of rhombus\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//row number
+	{
+		for (int j = 1; j <= n - i; ++j)	//printing spaces
+			cout << " ";
+		for (int j = 1; j <= n; ++j)	//printing the side
+			cout << "*";
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+    ***
+  * *
+***
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter length of rhombus\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)	//row number
+	{
+		for (int j = 1; j <= n - i; ++j)	//printing spaces
+			cout << " ";
+		if (i == 1 || i == n)
+		{
+			for (int j = 1; j <= n; ++j)	//printing the upper and lower side
+				cout << "*";
+		}
+		else
+		{
+			for (int j = 1; j <= n; ++j)
+			{
+				if (j == 1 || j == n)	//print first and last star of the side
+					cout << "*";
+				else
+					cout << " ";
+			}
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+N=2;		
+ X		
+X X
+ X
+N=5;
+    X
+     X
+    O X
+     O X
+X O X O X
+ X O
+  X O
+   X
+    X
+N=6;
+    X
+      X
+     O X
+      O X
+     X O X
+X O X X O X
+ X O X
+  X O
+   X O
+    X
+     X
+
+View Code
+
+#include 
+using namespace std;
+
+void px(int n)	//print alternate X O beginning from X
+{
+	for (int i = 1; i <= n; ++i)
+	{
+		if (i % 2 != 0)
+			cout << "X ";
+		else
+			cout << "O ";
+	}
+}
+
+void po(int n)	//print alternate X O beginning from O
+{
+	for (int i = 1; i <= n; ++i)
+	{
+		if (i % 2 != 0)
+			cout << "O ";
+		else
+			cout << "X ";
+	}
+}
+int main()
+{
+	int n, m, i, spaces, val;
+	cout << "Enter number of elements in middle row\n"; cin >> m;
+	if (m % 2 == 0)	//n-2 lines in case of even
+		n = m - 1;
+	n = m - 1;	//just n-1 for odd
+	spaces = m - 1;	//number of spaces
+	for (int i = 1; i <= n / 2; ++i)	//print 2 rows together
+	{
+		val = i;	//number of values in row
+		for (int j = 1; j <= spaces; j++)
+			cout << " ";
+		if (i % 2 != 0)
+			px(val);
+		else
+			po(val);
+		cout << "\n";
+		//printing second row with one space more
+		for (int j = 1; j <= spaces + 1; j++)
+			cout << " ";
+		if (i % 2 != 0)	//odd row number
+			px(val);
+		else
+			po(val);
+		cout << "\n";
+	}
+	if (m % 2 == 0)	//extra mid row for even m
+	{
+		i = m / 2;
+		val = i;
+		for (int j = 1; j <= spaces; j++)
+			cout << " ";
+		if (i % 2 != 0)
+			px(val);
+		else
+			po(val);
+		cout << "\n";
+	}
+	//printing middle row
+	if (m % 2 != 0)
+		px(m);
+	else
+	{
+		val = m / 2;
+		px(val);
+		if (val % 2 == 0)	//printed half ended on o
+			po(val);
+		else	//printed half ended at x
+			px(val);
+	}
+	cout << "\n";
+	//printing lower half
+	spaces = 1;
+	if (m % 2 == 0)	//extra mid row for even m
+	{
+		i = m / 2;
+		val = i;
+		for (int j = 1; j <= spaces; j++)
+			cout << " ";
+		px(val);
+		spaces++;	//incrementing spaces for next row
+		cout << "\n"; } for (int i = n / 2; i > 0; --i)
+	{
+		val = i;	//number of values in row
+		for (int j = 1; j <= spaces; j++)
+			cout << " ";
+		px(val);
+		cout << "\n";
+		spaces++;
+		//printing second row with one space more
+		for (int j = 1; j <= spaces; j++)
+			cout << " ";
+		px(val);
+		cout << "\n";
+		spaces++;
+	}
+	return 0;
+}
+
+Pattern
+  
+    * *
+    * *
+  * * * *
+  * * * *
+* * * * * *
+* * * * * *
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of steps\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)
+	{
+		int spaces = 2 *(n - i);
+		int ctr = 0;
+		while (ctr < 2)	//print same row twice
+		{
+			for (int j = 1; j <= spaces; ++j)
+				cout << " ";
+			for (int j = 1; j <= 2 * i; ++j)
+				cout << "*";
+			ctr++;
+			cout << "\n";
+		}
+	}
+	return 0;
+}
+
+Pattern
+  
+       1
+    2 1 1 2
+ 3 2 1   1 2 3
+    2 1 1 2
+       1
+
+View Code
+
+	
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows\n"; cin >> n;
+	int r = n / 2 + 1;
+	for (int i = 1; i <= r; ++i)	//upper half
+	{
+		for (int j = 1; j <= 3 *(r - i); j++)	//beginning spaces
+		{
+			cout << " "; } for (int j = i; j > 0; --j)	//printing decreasing numbers
+			cout << j << " "; for (int j = 2 *(i - 2); j > 0; --j)
+			cout << " ";
+		for (int j = 1; j <= i && i > 1; ++j)	//printing increasing numbers
+			cout << j << " ";
+		cout << "\n"; } for (int i = r - 1; i > 0; --i)	//lower half
+	{
+		for (int j = 1; j <= 3 *(r - i); j++)	//beginning spaces
+		{
+			cout << " "; } for (int j = i; j > 0; --j)	//printing decreasing numbers
+			cout << j << " "; for (int j = 2 *(i - 2); j > 0; --j)
+			cout << " ";
+		for (int j = 1; j <= i && i > 1; ++j)	//printing increasing numbers
+			cout << j << " ";
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+*      * * * *
+*      *
+*      *
+*  *  *  *  *
+      *     *
+      *     *
+* * * *     *
+
+View Code
+
+#include 
+using namespace std;
+//all spaces in this program are two spaces
+int main()
+{
+	int n;
+	cout << "Enter number of rows\n"; cin >> n;
+	for (int j = 1; j < 2 * n; ++j) //printing first line { if (j == 1 || j >= n)
+			cout << "*";
+		else
+			cout << "  ";
+	}
+	cout << "\n";
+	for (int i = 1; i <= n - 2; ++i)	//printing the upper half
+	{
+		for (int j = 1; j <= n; ++j)
+		{
+			if (j == 1 || j == n)
+				cout << "*";
+			else
+				cout << "  ";
+		}
+		cout << "\n";
+	}
+	for (int j = 1; j < 2 * n; ++j)	//printing middle row
+		cout << "*";
+	cout << "\n";
+	for (int i = 1; i <= n - 2; ++i)	//printing the lower half
+	{
+		for (int j = 1; j < 2 * n; ++j)
+		{
+			if (j == n || j == 2 *n - 1)
+				cout << "*";
+			else
+				cout << "  ";
+		}
+		cout << "\n";
+	}
+	for (int j = 1; j < 2 * n; ++j)	//last row
+	{
+		if (j <= n || j == 2 *n - 1)
+			cout << "*";
+		else
+			cout << "  ";
+	}
+
+	return 0;
+}
+
+Pattern
+  
+1        1
+12      21
+123    321
+1234  4321
+1234554321
+
+View Code
+
+#include 
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows\n"; cin >> n;
+	for (int i = 1; i <= n; ++i)
+	{
+		for (int j = 1; j <= 2 * n; ++j)
+		{
+			if (j <= i)
+				cout << j; else if (i > (2 *n - j))
+				cout << 2 *n - j + 1;
+			else
+				cout << " ";
+		}
+		cout << "\n";
+	}
+	return 0;
+}
+
+Pattern
+  
+           1
+        1   1
+      1   2   1
+    1   3   3   1
+  1   4   6   4   1
+
+View Code
+
+#include 
+#include   	//to use setw function
+using namespace std;
+
+int fact(int n)
+{
+	if (n <= 1)	//factorial of zero and 1
+		return 1;
+	else
+		return (n* fact(n - 1));
+}
+
+int nCr(int n, int r)
+{
+	return (fact(n) / (fact(n - r) *fact(r)));
+}
+
+int main()
+{
+	int n;
+	cout << "Enter number of rows\n"; cin >> n;
+	for (int i = 0; i < n; ++i) { int spaces = (n - i - 1); while (spaces > 0)	//printing spaces
+		{
+			cout << setw(2) << " ";
+			--spaces;
+		}
+		for (int j = 0; j <= i; ++j)	//printing terms
+			cout << setw(3) << nCr(i, j) << " ";
+		cout << "\n";
+	}
+	return 0;
+}
